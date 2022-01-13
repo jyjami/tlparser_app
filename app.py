@@ -57,12 +57,14 @@ if __name__== "__main__":
     new_title = '<p style="font-family:sans-serif; color:white; font-size: 20px;">@streamlit</p>'
     st.markdown(new_title, unsafe_allow_html=True)
     html_temp = """
-    <div style="background-color:tomato;padding:10px">
+    <div style="background-color:green;padding:10px">
     <h2 style="color:white;text-align:center;">Time Log Parser App </h2>
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     file = st.file_uploader(" Upload the TimeLog file here")
+    with st.expander("Description"):
+        st.success("tl parser generation")
     if st.button("Generate"):
         line = str(file.read(),"utf-8")
         get_details_from_log(line)
