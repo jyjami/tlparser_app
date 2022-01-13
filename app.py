@@ -61,6 +61,7 @@ if __name__== "__main__":
     <h2 style="color:white;text-align:center;">Time Log Parser App </h2>
     </div>
     """
+    st.sidebar.selectbox("Credentials",("Login","sign In"))
     st.markdown(html_temp,unsafe_allow_html=True)
     file = st.file_uploader(" Upload the TimeLog file here")
     with st.expander("Description"):
