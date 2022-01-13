@@ -41,7 +41,7 @@ def get_details_from_log(line):
 
 
 if __name__== "__main__":
-    st.title("Webapp for tl Parser")
+    st.title("Web Application built on streamlit")
     main_bg = "image.jpg"
     main_bg_ext = "jpg"
     st.markdown(
