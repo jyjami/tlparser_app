@@ -13,7 +13,6 @@ def get_details_from_log(line):
 
     times = []
     for line in line[1:]:
-        st.write(line)
         for i in range(len(line)-1):
             if line[i]==':' and line[i+1]!=' ':
                 times.append(line[i-2:i+5])
