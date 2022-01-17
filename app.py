@@ -67,5 +67,5 @@ if __name__== "__main__":
         st.success("tl parser generation")
     if st.button("Generate"):
         line = str(file.read(),"utf-8")
-        print(str(file))
+        st.write(str(file))
         get_details_from_log(line)
