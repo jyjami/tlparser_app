@@ -48,7 +48,7 @@ if __name__== "__main__":
     f"""
     <style>
     .reportview-container {{
-        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+        background: url(data:image(2)/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
     }}
     </style>
     """,
