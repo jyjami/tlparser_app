@@ -68,5 +68,5 @@ if __name__== "__main__":
     if st.button("Generate"):
         line = str(file.read(),"utf-8")
         x = st.write(str(file))
-        st.write(x[::])
+        st.write(type(x))
         get_details_from_log(line)
