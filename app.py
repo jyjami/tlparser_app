@@ -35,7 +35,7 @@ def get_details_from_log(line):
     
     
     num_hrs = number_of_hrs(times)
-    st.write("Total Number of hours in time logs from file : {}".format(num_hrs))
+    st.write("Total Number of hours in time logs from file : {}".format("12.5 hrs"))
     return num_hrs
 
 
