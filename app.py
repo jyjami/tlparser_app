@@ -42,13 +42,13 @@ def get_details_from_log(line):
 
 if __name__== "__main__":
     st.title("Web Application built on streamlit")
-    main_bg = "image(2).jpg"
+    main_bg = "image.jpg"
     main_bg_ext = "jpg"
     st.markdown(
     f"""
     <style>
     .reportview-container {{
-        background: url(data:image(2)/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
     }}
     </style>
     """,
